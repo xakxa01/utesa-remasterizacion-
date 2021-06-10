@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$amarillo: #fff76a;
+$verde1:#61b15a;
+$verde2:#adce74;
+$crema:#ffce89;
+$negro: #333;
+
+aside {
+  width: 100%;
+  height: 110vh;
+  background: $amarillo;
+  padding: 10px;
+  transition: all 1s;
+}
+
+.aside-opcions {
+  padding: 0;
+}
+
+.subseccion,
+.subseccion-2 {
+  display: none;
+  position: absolute;
+  left: 11%;
+  padding: 10px;
+  z-index: 50;
+  background: $amarillo;
+}
+
+.subseccion-2 {
+  left: 0;
+}
+
+.list {
+  font-family: 'Open Sans', sans-serif;
+  color: $negro;
+  text-decoration: none;
+  text-align: left;
+  padding: 15px 5px;
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+  font-weight: bold;
+  
+  &:hover{
+    border-bottom: solid 1px;  
+  }
+}
+
+.activador:hover .subseccion {
+  display: block;
+}
+
+.activador-2:hover .subseccion-2 {
+  display: block;
+}
+
+.sublist {
+  padding: 10px;
+  list-style: none;
+  background: $amarillo;
+  width: 200px;
+  &:hover{
+    border-bottom: solid 1px;  
+  }
+}

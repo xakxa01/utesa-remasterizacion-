@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+//colors
+$amarillo: #fff76a;
+$verde1:#61b15a;
+$verde2:#adce74;
+$crema:#ffce89;
+$negro: #333;
+$ancho: 350px;
+$alto: 225px;
+
+.header-img {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+}
+
+.inicio {
+  display: flex;
+  height: 100vh;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.img-1,
+.img-2,
+.img-3 {
+  overflow: hidden;
+  width: $ancho;
+  height: $alto;
+  margin: 5px;
+  
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover .sombra {
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: .5s; /* don't forget to set a duration! */
+    opacity: 100%;
+  }
+  
+}
+
+.img-4,
+.img-5 {
+  overflow: hidden;
+  width: $ancho * 2;
+  height: $alto * 2;
+  margin: 5px;
+  
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover .sombra {
+    display: block;
+    animation: fadeInUp ; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: .5s; /* don't forget to set a duration! */
+    opacity: 100%;
+  }
+}
+
+
+
+.img-1 {
+  background: url(../../../assets/StoDgo1.jpg);
+  background-repeat: no-repeat;
+}
+
+.img-2 {
+  background: url(../../../assets/PtoPta.jpg);
+  background-repeat: no-repeat;
+}
+
+.img-3 {
+  background: url(../../../assets/Stgo.jpg);
+  background-repeat: no-repeat;
+}
+
+.img-4 {
+  background: url(../../../assets/Moca.png);
+  background-repeat: no-repeat;
+}
+
+.img-5 {
+  background: url(../../../assets/Mao.png);
+  background-repeat: no-repeat;
+}
+
+.grid {
+  margin: 30px;
+  display: flex;
+}
+
+.subgrid1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.subgrid2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.sombra {
+  opacity: 0;
+  width: 100%;
+  height: 30%;
+  
+  background: black;
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+
+  animation: fadeOutDown;
+  animation-duration: .5s;
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+
+}
+
+.pago{
+  height: 50px;
+  width: 97%;
+  float: right;
+  padding: 10px;
+  background: $verde2;
+  transition: all .5s;
+
+  &:hover{
+    background: $verde1;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Anton' ,sans-serif;
+  }
+
+  svg{
+    position: relative;
+    top: -25px;
+  }
+}
+
+.pago-seccion{
+    width: 84%;
+    overflow: hidden;
+    margin: 10px;
+    float: right;
+}
+
+.descripcion-pago{
+  background: $amarillo;
+  color: #333;
+  width: 250px;
+  height: 150px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  right: -73%;
+  font-family: 'Roboto' ,sans-serif;
+}
+
+.mensaje{
+  width: 80%;
+  margin: auto;
+  font-family: sans-serif;
+  color: $negro;
+  
+  h3{
+    color: #51c2d5;
+  }
+
+  h2{
+    color: #333;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .discurso{
+    border-left: solid;
+    border-width: .5em;
+    border-left-color: #51c2d5;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-collapse: separate;
+    padding: 10px;
+  }
+
+  img{
+    margin: 25px;
+  }
+  
+}

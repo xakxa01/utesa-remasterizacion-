@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+//colors
+$amarillo: #fff76a;
+$verde1:#61b15a;
+$verde2:#adce74;
+$crema:#ffce89;
+
+footer {
+  background: $verde1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .redes {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+    a {
+      margin: 10px;
+    }
+  }
+
+  .derechos {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    p {
+      margin: 5px;
+      text-align: center;
+      font-family: sans-serif;
+      color: white;
+    }
+  }
+}
+
+html,
+body {
+  box-sizing: order-box;
+  height: 100%;
+  width: 100%;
+}
+
+// Main wrap
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}
+
+// Button wrap
+.container {
+  display: flex;
+  padding: 1em;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 12px;
+
+  a {
+    background: rgba(white, 0);
+    border-bottom: 1px solid;
+    color: white;
+    line-height: 1.4;
+    padding: .25em;
+    text-decoration: none;
+
+    &:hover {
+      background: rgba(white, 1);
+      color: $verde2;
+    }
+  }
+}
+
+//button styles
+
+
+//default button
+.btn {
+  color: #fff;
+  cursor: pointer;
+  // display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  transition: all .5s;
+  outline: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 600px) {
+    margin: auto;
+  }
+}
+
+/////////////////////////////////
+//button one
+///////////////////////////////
+.btn-1 {
+  // background: darken($verde2, 1.5%);
+  font-weight: 100;
+
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+}
+
+.btn-1:hover {
+  background: rgba($crema, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: $verde1;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
